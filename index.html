@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="el">
+        <input type="text" v-model="test">{{test}}
+        <br>
+        <input type="text" v-model="test2">{{test2}}
+    </div>
+</body>
+</html>
+<script src="./observice.js"></script>
+<script src="./watch.js"></script>
+<script src="./compile.js"></script>
+<script src="./mvvm.js"></script>
+<script>
+var vm = new MVVM({
+    el:'el',
+    data(){
+      return {
+        test:'input1',
+        test2:'input2',
+      }
+    }
+})
+</script>
